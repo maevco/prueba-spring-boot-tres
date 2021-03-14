@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.istack.NotNull"/>
+    <fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
+    <fullyQualifiedTypeName name="javax.validation.constraints.Size"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.ceiba.vacuna.exception.ErrorResponse"/>
+    <fullyQualifiedTypeName name="org.springframework.dao.DuplicateKeyException"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+    <fullyQualifiedTypeName name="javax.validation.Valid"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.ceiba.vacuna.exception.InvalidDataException"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
+</qualifiedTypeNameHistroy>

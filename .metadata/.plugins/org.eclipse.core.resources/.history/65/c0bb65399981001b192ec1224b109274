@@ -1,0 +1,5 @@
+package com.ceiba.vacuna.exception;
+
+public class InvalidDataException {
+
+}

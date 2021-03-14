@@ -1,0 +1,53 @@
+package com.ceiba.vacuna.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ceiba.vacuna.modelo.Persona;
+import com.ceiba.vacuna.repository.PersonaRepository;
+
+@Service
+public class PersonaServiceImpl implements PersonaServiceDecl {
+
+	@Autowired
+	PersonaRepository personaRepository;
+
+	@Override
+	public List<Persona> getAllPersonas() {
+		return personaRepository.findAll();
+	}
+
+	@Override
+	public Persona findById(long id) {
+		return personaRepository.findById(id);
+	}
+
+	@Override
+	public Persona add(Persona persona) {
+		return personaRepository.save(persona);
+
+	}
+
+	@Override
+	public Persona edit(Persona persona) {
+		return personaRepository.save(persona);
+	}
+
+	@Override
+	public Persona delete(long id) {
+		Persona persona = personaRepository.findById(id);
+
+		if (persona != null) {
+			personaRepository.delete(persona);
+		}
+		return persona;
+	}
+
+	@Override
+	public boolean existsByTipoNumeroIdentificacion(String tipoIdentificacion, String numeroIdentificacion) {
+		return personaRepository.existsByTipoNumeroIdentificacion(tipoIdentificacion, numeroIdentificacion);
+	}
+
+}

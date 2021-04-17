@@ -41,7 +41,7 @@ public class PersonaServiceImpl implements PersonaServiceDecl {
 			  throw new DuplicateKeyException("Ya existe usuario con tipo y numero de identificación ingresado: " + persona.getNumeroIdentificacion());
 		}		
 		
-		
+		//prueba clonado
 		
 		return personaRepository.save(persona);
 
